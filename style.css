@@ -1,0 +1,130 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0 auto;
+    font-size: 16px;
+    color: rgb(180, 183, 185);
+    background: rgb(34, 30, 30);
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#page {
+    position: relative;
+    max-width: 1000px;
+    min-height: 100%;
+    margin: auto;
+    background: black;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+/* -------------------HEADER */
+
+header a {
+    border: 1px solid rgb(184, 184, 184);
+    color: rgb(153, 178, 202);
+    padding: 8px;
+    margin: 15px;
+    font-family: 'Marcellus SC', serif;
+}
+
+header a:hover {
+    color: white;
+    border: 1px solid rgb(0, 0, 0);
+    transition: 0.3s;
+    transform: rotate(5deg);
+}
+
+#hpimage {
+    filter: grayscale(55%);
+    max-width: 100%;
+}
+
+.container-avatar {
+    display: flex;
+    justify-content: center;
+}
+
+#avatar {
+    width: 150px;
+}
+
+/* ---------------------TEXT */
+
+.paragraph {
+    margin: 60px;
+}
+
+h1 {
+    font-size: 18px;
+}
+
+.socialmedia {
+    display: flex;
+    flex-direction: row;
+}
+
+.socialmedia div {
+    padding: 10px;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+p.copyright {
+    position: absolute;
+    width: 100%;
+    color: rgb(105, 105, 105);
+    line-height: 40px;
+    font-size: 14px;
+    /* bottom:0; */
+}
+
+/* ----------------RESPONSIVE */
+
+@media (max-width: 768px) {
+    .flex {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .paragraph {
+        margin: 30px;
+    }
+}
+
+@media (max-width: 400px) {
+    .flex {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    #hpimage {
+        display: none;
+    }
+    .paragraph {
+        margin: 20px;
+    }
+}
